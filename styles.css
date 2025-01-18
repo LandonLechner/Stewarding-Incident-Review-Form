@@ -1,0 +1,193 @@
+body { 
+    margin: 0; 
+    font-family: arial;
+}
+
+#all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#headerImage {
+    /*background-image: url(https://images.pexels.com/photos/6015394/pexels-photo-6015394.jpeg);*/
+    /*background-image: url(https://images.pexels.com/photos/3368844/pexels-photo-3368844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);*/
+    background-image: url(https://images.pexels.com/photos/7530005/pexels-photo-7530005.jpeg);
+    /*background-image: url(https://images.pexels.com/photos/6028660/pexels-photo-6028660.jpeg?auto=compress&cs=tinysrgb&w=600);*/
+    /*background-image: url(https://images.pexels.com/photos/6517332/pexels-photo-6517332.jpeg?auto=compress&cs=tinysrgb&w=600);*/
+    /*background-image: url(https://images.pexels.com/photos/5717260/pexels-photo-5717260.jpeg?auto=compress&cs=tinysrgb&w=600);*/
+    /*background-image: url(https://images.pexels.com/photos/6963914/pexels-photo-6963914.jpeg?auto=compress&cs=tinysrgb&w=600);*/
+    /*background-image: url(https://images.pexels.com/photos/3784324/pexels-photo-3784324.jpeg?auto=compress&cs=tinysrgb&w=600);*/
+    /*background-image: url(https://images.pexels.com/photos/7530016/pexels-photo-7530016.jpeg?auto=compress&cs=tinysrgb&w=600);*/
+    /*background-image: url(https://images.pexels.com/photos/5904051/pexels-photo-5904051.jpeg?auto=compress&cs=tinysrgb&w=600);*/
+    background-size: cover;
+    height: 50vh;
+    background-position: top 75% right 0;
+    background-repeat: no-repeat;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem;
+    box-shadow: 6px 10px 10px -2px rgba(0,0,0,0.3);
+    border-image: linear-gradient(.45turn, rgba(255,255,255,0.5),
+        rgba(0,0,0,0.7))
+        fill 1;
+}
+
+#belowHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 10px 0;
+}
+
+#leftSection {
+    min-width: 405px;
+}
+
+#rightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    min-width: 405px;
+}
+
+#incidentContainer {
+    position: relative;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    font-size: 4rem;
+    text-shadow: 6px 10px 10px rgba(0,0,0,0.8);
+}
+
+h3 {
+    display: inline-block;
+    margin: 15px 0 5px 0;
+    font-weight: 600;
+}
+
+input {
+    margin-bottom: 2px;
+}
+
+.incCollapseBtnAll {
+    aspect-ratio: 1/1;
+    display: inline-block;
+    transition: 350ms;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    transform: rotate(0);
+}
+
+#incAddRemoveButtons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.collapsed {
+    transform: rotate(90deg);
+}
+
+.otherDeets {
+    display: block;
+    margin-left: 3.88rem;
+}
+
+.reasoning {
+    max-width: 405px;
+    min-width: 405px;
+}
+
+textarea {
+   font-family: inherit;
+   font-size: 0.8rem;
+}
+
+#output {
+    font-size: 0.8rem;
+    max-width: 405px;
+    min-width: 405px;
+}
+
+.bottomButtons {
+    margin-bottom: 40px;
+}
+
+#copyButton {
+    background-color: #0f960f;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    width: 400px;
+    padding: 6px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    box-shadow: 6px 10px 10px -2px rgba(0,0,0,0.3);
+}
+
+#copyButton:hover {
+    background-color: #0b6e0b;
+}
+
+#copyButton:active {
+    transform: scale(0.90);
+}
+
+.incButtons {
+    padding: 0 20px;
+    box-shadow: 6px 10px 10px -2px rgba(0,0,0,0.3);
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2px solid #07A3C8;
+    background-color: white;
+    height: 28px;
+}
+
+.incButtons:active {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+        
+.incButtons:hover {
+    background-position: left bottom;
+    background-color: #07A3C8;
+    border: 2px solid #07A3C8;
+    color: white;
+}
+
+.incButtons:hover {
+    background-position: left bottom;
+    background-color: #07A3C8;
+    border: 2px solid #07A3C8;
+}
+
+#collapseAll {
+    position: absolute;
+    padding: 0 10px;
+    height: 20px;
+    margin-top: 14px;
+}
+
+.driversBtn {
+    padding: 0;
+    width: 30px;
+    height: 20px;
+}
+
+#footer{
+    height: 500px;
+    width: 100%;
+}
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<HTML>
+    <!DOCTYPE html>
+    <HTML>
+        <HEAD>
+            <link link href="styles.css" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Stewarding Incident Review Form</title>
+        </HEAD>
+	<BODY>
+	    <div id="all">
+            <section id="header">
+                <div id="headerImage">
+	                <h1>Stewarding Incident Review Form</h1>
+	            </div>
+            </section>
+            <section id="belowHeader">
+                <section id="leftSection">
+                    <div id="incidentContainer">
+                        <h3>Incident 1</h3>
+                        <button id="inc1CollapseBtn" class="incCollapseBtnAll">
+                            <img src="https://img.icons8.com/?size=15&id=39942&format=png&color=000000">
+                        </button>
+                        <button id="collapseAll" class="incButtons" style="display: none">Collapse all</button>
+                        <div id="inc1AfterCheckbox">
+                            <div>
+                    	        <div>
+                                    <label for="penalty-1.1">Penalty:</label>
+                                    <select name="penalty-1.1" id="penalty-1.1">
+                                        <option selected value> ---</option>
+                                        <option value="Involved">Involved</option>
+                                        <option value="NFA">NFA</option>
+                                        <option value="Racing incident">Racing incident</option>
+                                        <option value="Warning">Warning</option>
+                                        <option value="2 points">2 points</option>
+                                        <option value="4 points">4 points</option>
+                                        <option value="6 points">6 points</option>
+                                        <option value="8 points">8 points</option>
+                                        <option value="Other...">Other...</option>
+                                    </select>
+                                    <input placeholder="Driver name" type="text" id="driverName-1.1">
+                                    <button id="inc1AddDriver" class="driversBtn incButtons">+</button>
+                                    <input placeholder="Describe penalty" type="text" id="otherDeets-1.1" class="otherDeets" size="41" style="display:none">
+                                </div>
+                    	        <div id="inc1driver2" style="display: none">
+                    	            <label for="penalty1.2">Penalty:</label>
+                                    <select name="penalty-1.2" id="penalty-1.2">
+                                        <option selected value> ---</option>
+                                        <option value="Involved">Involved</option>
+                                        <option value="NFA">NFA</option>
+                                        <option value="Racing incident">Racing incident</option>
+                                        <option value="Warning">Warning</option>
+                                        <option value="2 points">2 points</option>
+                                        <option value="4 points">4 points</option>
+                                        <option value="6 points">6 points</option>
+                                        <option value="8 points">8 points</option>
+                                        <option value="Other...">Other...</option>
+                                    </select>
+                                    <input placeholder="Driver 2 name" type="text" id="driverName-1.2">
+                                    <button id="inc1RemoveDriver2" class="driversBtn incButtons">-</button>
+                                    <input placeholder="Describe penalty" type="text" id="otherDeets-1.2" class="otherDeets" size="42" style="display:none">
+                                </div>
+                                <textarea placeholder="Reasoning" id="reasoning-1" class="reasoning" spellcheck="true" rows="3" cols="54"></textarea>
+                            </div>    
+                        </div>
+                    </div>
+                    <div id="incAddRemoveButtons">
+                        <button id="removeIncident" class="incButtons bottomButtons" style="display:none">❌  Incident</button>
+                        <button id="addIncident" class="incButtons bottomButtons">Add Incident</button>
+                    </div>
+                </section>
+                <section id="rightSection">
+                    <h3>Output</h3>
+                    <!--<label for="format">Select output format: </label>-->
+                    <select name="format" id="format">
+                        <option disabled selected value>Select output format</option>
+                        <option value="format1">**Inc 1) - 2 points** Reasoning. (line break)</option>
+                        <option value="format2">INC1 - 2 points - Reasoning. (line break)</option>
+                        <option value="format3">Inc 1 - 2 points - Reasoning. (no line break)</option>
+                        <option value="format4">**Inc 1 - 2 points** Reasoning. (no line break)</option>
+                    </select>
+                    <button id="preview" class="incButtons">Update output</button>
+                    <button id="copyButton">Copy</button>
+                    <textarea id="output" spellcheck="true" rows="20" cols="60" style="display:none"></textarea>
+                </section>
+            </section>
+            <div id="footer">
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+	</BODY>
+</HTML>
