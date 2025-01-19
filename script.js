@@ -56,7 +56,7 @@ function printInitial (num) {
                     <button id="inc${num}RemoveDriver2" class="driversBtn incButtons">-</button>
                     <input placeholder="Describe penalty" type="text" id="otherDeets-${num}.2" class="otherDeets" size="42" style="display:none">
                 </div>
-                <textarea placeholder="Reasoning" id="reasoning-${num}" class="reasoning" spellcheck="true" rows="3" cols="54"></textarea>
+                <textarea placeholder="Reasoning" id="reasoning-${num}" class="reasoning" spellcheck="true" rows="5" cols="54"></textarea>
             </div>    
         </div>`;
     }
