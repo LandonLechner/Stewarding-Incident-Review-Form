@@ -219,8 +219,6 @@ document.querySelector("#addIncident").addEventListener('click', () => {
     if (incidentsVisibleNum < maxIncidents) {
         document.querySelector("#removeIncident").style.display = "inline-block";
         document.querySelector("#addIncident").style.display = "inline-block";
-        document.getElementById(`otherDeets-${incidentsVisibleNum}.1`).style.display = "none";
-        document.getElementById(`otherDeets-${incidentsVisibleNum}.2`).style.display = "none";
         } else {
             document.querySelector("#addIncident").style.display = "none";
         }
