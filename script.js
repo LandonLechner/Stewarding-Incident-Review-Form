@@ -135,7 +135,7 @@ function updateOutput () {
         switch (document.getElementById("format").value) {
             case "format1":
                 baseText = `**Inc ${i}) - ${penalty1}`;
-                if (["NFA", "Racing incident"].includes(penalty1)) {
+                if (["NFA", "Racing incident", "Involved"].includes(penalty1)) {
                     outputArray[i] = `${i > 1 ? 
                     "\r\n\r\n" : ""}${baseText}** ${reasoning}`;
                 } else if (incObject[`inc${i}Driver2Tog`]) {
@@ -148,7 +148,7 @@ function updateOutput () {
                 break;
             case "format2":
                 baseText = `INC${i} - ${penalty1}`;
-                if (["NFA", "Racing incident"].includes(penalty1)) {
+                if (["NFA", "Racing incident", "Involved"].includes(penalty1)) {
                     outputArray[i] = `${i > 1 ? 
                     "\r\n\r\n" : ""}${baseText} - ${reasoning}`;
                 } else if (incObject[`inc${i}Driver2Tog`]) {
@@ -161,7 +161,7 @@ function updateOutput () {
                 break;
             case "format3":
                 baseText = `Inc ${i} - ${penalty1}`;
-                if (["NFA", "Racing incident"].includes(penalty1)) {
+                if (["NFA", "Racing incident", "Involved"].includes(penalty1)) {
                     outputArray[i] = `${i > 1 ? 
                     "\r\n" : ""}${baseText} - ${reasoning}`;
                 } else if (incObject[`inc${i}Driver2Tog`]) {
@@ -174,7 +174,7 @@ function updateOutput () {
                 break;
             case "format4":
                 baseText = `**Inc ${i} - ${penalty1}`;
-                if (["NFA", "Racing incident"].includes(penalty1)) {
+                if (["NFA", "Racing incident", "Involved"].includes(penalty1)) {
                     outputArray[i] = `${i > 1 ? 
                     "\r\n" : ""}${baseText}** ${reasoning}`;
                 } else if (incObject[`inc${i}Driver2Tog`]) {
