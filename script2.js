@@ -13,7 +13,7 @@ function printInitial (num) {
         newIncDiv.id = `incident${num}Group`;
         
         newIncDiv.innerHTML =
-        `<h3>Incident ${num}</h3>
+        `<h3 class="incidentTitle">Incident ${num}</h3>
         <button id="inc${num}CollapseBtn"class="incCollapseBtnAll"><img src="https://img.icons8.com/?size=15&id=39942&format=png&color=000000"></button>
         <div id="inc${num}AfterCheckbox">
             <div id="inc${num}driver1" class="incDriverRows">
