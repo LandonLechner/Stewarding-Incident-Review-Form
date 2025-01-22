@@ -44,7 +44,7 @@ body {
 }
 
 #leftSection {
-    min-width: 405px;
+    width: 415px;
 }
 
 #rightSection {
@@ -52,7 +52,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    min-width: 405px;
+    width: 415px;
 }
 
 #incidentContainer {
@@ -71,10 +71,23 @@ h3 {
     display: inline-block;
     margin: 15px 0 5px 0;
     font-weight: 600;
+    font-size: 1.3rem;
 }
 
 input {
+    font-size: 1rem;
+}
+
+select {
+    font-size: 1rem;
+}
+
+.incDriverRows {
+    display: flex;
+    align-items: center;
+    gap: 4px;
     margin-bottom: 2px;
+    flex-wrap: wrap;
 }
 
 .incCollapseBtnAll {
@@ -84,6 +97,10 @@ input {
     background-color: rgba(0,0,0,0);
     border: none;
     transform: rotate(0);
+}
+
+#incidentContainer {
+    max-width: 415px;
 }
 
 #incAddRemoveButtons {
@@ -97,13 +114,11 @@ input {
 }
 
 .otherDeets {
-    display: block;
-    margin-left: 3.88rem;
+    justify-self: flex-end;
 }
 
 .reasoning {
-    max-width: 405px;
-    min-width: 405px;
+    width: 405px;
 }
 
 textarea {
@@ -113,8 +128,7 @@ textarea {
 
 #output {
     font-size: 0.8rem;
-    max-width: 405px;
-    min-width: 405px;
+    width: 405px;
 }
 
 .bottomButtons {
@@ -176,13 +190,13 @@ textarea {
     position: absolute;
     padding: 0 10px;
     height: 20px;
-    margin-top: 14px;
+    margin-top: 18px;
 }
 
 .driversBtn {
     padding: 0;
-    width: 30px;
-    height: 20px;
+    width: 36px;
+    height: 26px;
 }
 
 #footer{
