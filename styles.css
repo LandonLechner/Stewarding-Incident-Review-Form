@@ -121,11 +121,12 @@ select {
 
 textarea {
    font-family: inherit;
+   resize: vertical; 
    font-size: 0.8rem;
 }
 
 #output {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     width: 405px;
 }
 

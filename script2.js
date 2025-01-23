@@ -20,14 +20,14 @@ function printInitial (num) {
                 <label for="penalty-${num}.1">Penalty:</label>
                 <select name="penalty-${num}.1" id="penalty-${num}.1">
                     <option selected value> ---</option>
-                    <option value="Involved">Involved</option>
-                    <option value="NFA">NFA</option>
-                    <option value="Racing incident">Racing incident</option>
-                    <option value="Warning">Warning</option>
                     <option value="2 points">2 points</option>
                     <option value="4 points">4 points</option>
                     <option value="6 points">6 points</option>
                     <option value="8 points">8 points</option>
+                    <option value="Racing incident">Racing incident</option>
+                    <option value="NFA">NFA</option>
+                    <option value="Warning">Warning</option>
+                    <option value="Involved">Involved</option>
                     <option value="Other...">Other...</option>
                 </select>
                 <input placeholder="Driver name" type="text" id="driverName-${num}.1" size="17">
@@ -38,14 +38,14 @@ function printInitial (num) {
                 <label for="penalty-${num}.2">Penalty:</label>
                 <select name="penalty-${num}.2" id="penalty-${num}.2">
                     <option selected value> ---</option>
-                    <option value="Involved">Involved</option>
-                    <option value="NFA">NFA</option>
-                    <option value="Racing incident">Racing incident</option>
-                    <option value="Warning">Warning</option>
                     <option value="2 points">2 points</option>
                     <option value="4 points">4 points</option>
                     <option value="6 points">6 points</option>
                     <option value="8 points">8 points</option>
+                    <option value="Racing incident">Racing incident</option>
+                    <option value="NFA">NFA</option>
+                    <option value="Warning">Warning</option>
+                    <option value="Involved">Involved</option>
                     <option value="Other...">Other...</option>
                 </select>
                 <input placeholder="Driver 2 name" type="text" id="driverName-${num}.2" size="17">
