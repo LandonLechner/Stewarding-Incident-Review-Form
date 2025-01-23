@@ -71,10 +71,10 @@ function toggleIncVisibility(num) {
 }
 
 function addingRemoving2ndDrivers(num) {
-    const driver2 = document.querySelector(`#inc${num}driver2`);
+    // const driver2 = document.querySelector(`#inc${num}driver2`);
     ["AddDriver", "RemoveDriver2"].forEach((action, index) => {
         document.querySelector(`#inc${num}${action}`).addEventListener('click', () => {
-            driver2.style.display = index === 0 ? "flex" : "none";
+            document.querySelector(`#inc${num}driver2`).style.display = index === 0 ? "flex" : "none";
         });
     });
 }
@@ -172,12 +172,33 @@ function updateTextarea (incsVisibleNum) {
     // console.log(outputArray.join("").length-1);
 }
 
+function driverNameVisibility (num) {
+//add or remove driver name from incident row based on penalty dropdown selection
+    const dropdown1 = document.getElementById(`penalty-${num}.1`);
+    const dropdown2 = document.getElementById(`penalty-${num}.2`);   
+    dropdown1.addEventListener('input', () => {
+        if (["NFA", "Racing incident", "Involved"].includes(dropdown1.value)) {
+            document.getElementById(`driverName-${num}.1`).style.display = "none"
+        } else {
+            document.getElementById(`driverName-${num}.1`).style.display = "inline-block"
+        }
+    })
+    dropdown2.addEventListener('input', () => {
+        if (["NFA", "Racing incident", "Involved"].includes(dropdown2.value)) {
+            document.getElementById(`driverName-${num}.2`).style.display = "none"
+        } else {
+            document.getElementById(`driverName-${num}.2`).style.display = "inline-block"
+        }
+    })
+}
+
 printInitial(1);
 toggleIncVisibility(1);
 incObject[`inc1Driver2Tog`] = false;
 createDriver2Togs(1);
 addingRemoving2ndDrivers(1);
 penaltyInputListeners(1);
+driverNameVisibility(1)
 
 document.querySelector("#addIncident").addEventListener('click', () => {
 //Add incident button function
@@ -188,6 +209,7 @@ document.querySelector("#addIncident").addEventListener('click', () => {
     createDriver2Togs(incsVisibleNum);
     addingRemoving2ndDrivers(incsVisibleNum);
     penaltyInputListeners(incsVisibleNum);
+    driverNameVisibility(incsVisibleNum)
     document.querySelector(`#incident${incsVisibleNum}Group`).style.display = "block";
     document.querySelector(`#inc${incsVisibleNum}AfterCheckbox`).style.display = "block";
     document.getElementById('collapseAll').style.display = "inline-block";

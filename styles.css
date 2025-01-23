@@ -10,7 +10,6 @@ body {
 }
 
 #headerImage {
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +25,7 @@ body {
     position: relative;
     z-index: -1;
     min-height: 75vh;
+    background-repeat: no-repeat;
 }
 
 h1 {
