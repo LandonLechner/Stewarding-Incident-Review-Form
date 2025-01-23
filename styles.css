@@ -10,29 +10,32 @@ body {
 }
 
 #headerImage {
-    /*background-image: url(https://images.pexels.com/photos/6015394/pexels-photo-6015394.jpeg);*/
-    /*background-image: url(https://images.pexels.com/photos/3368844/pexels-photo-3368844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);*/
-    background-image: url(https://images.pexels.com/photos/7530005/pexels-photo-7530005.jpeg);
-    /*background-image: url(https://images.pexels.com/photos/6028660/pexels-photo-6028660.jpeg?auto=compress&cs=tinysrgb&w=600);*/
-    /*background-image: url(https://images.pexels.com/photos/6517332/pexels-photo-6517332.jpeg?auto=compress&cs=tinysrgb&w=600);*/
-    /*background-image: url(https://images.pexels.com/photos/5717260/pexels-photo-5717260.jpeg?auto=compress&cs=tinysrgb&w=600);*/
-    /*background-image: url(https://images.pexels.com/photos/6963914/pexels-photo-6963914.jpeg?auto=compress&cs=tinysrgb&w=600);*/
-    /*background-image: url(https://images.pexels.com/photos/3784324/pexels-photo-3784324.jpeg?auto=compress&cs=tinysrgb&w=600);*/
-    /*background-image: url(https://images.pexels.com/photos/7530016/pexels-photo-7530016.jpeg?auto=compress&cs=tinysrgb&w=600);*/
-    /*background-image: url(https://images.pexels.com/photos/5904051/pexels-photo-5904051.jpeg?auto=compress&cs=tinysrgb&w=600);*/
-    background-size: cover;
-    height: 800px;
-    height: 75vh;
-    background-position: top 77% right 0;
     background-repeat: no-repeat;
-    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 6px 10px 10px -2px rgba(0,0,0,0.3);
-    border-image: linear-gradient(.45turn, rgba(255,255,255,0.5),
-        rgba(0,0,0,0.7))
-        fill 1;
+    border-image: linear-gradient(.45turn, rgba(255,255,255,0.3),
+    rgba(0,0,0,0.9))
+    fill 1;
+}
+
+img {
+    max-width: 100vw;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+    min-height: 75vh;
+}
+
+h1 {
+    margin: 10%;
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    font-size: 4rem;
+    text-shadow: 6px 10px 10px rgba(0,0,0,0.8);
+    position: absolute;
 }
 
 #belowHeader {
@@ -57,15 +60,6 @@ body {
 
 #incidentContainer {
     position: relative;
-}
-
-h1 {
-    margin: 10%;
-    color: white;
-    text-align: center;
-    font-weight: 200;
-    font-size: 4rem;
-    text-shadow: 6px 10px 10px rgba(0,0,0,0.8);
 }
 
 h3 {
