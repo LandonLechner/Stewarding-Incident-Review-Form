@@ -20,7 +20,7 @@ body {
     fill 1;
 }
 
-img {
+#heroImage {
     max-width: 100vw;
     object-fit: cover;
     position: relative;
