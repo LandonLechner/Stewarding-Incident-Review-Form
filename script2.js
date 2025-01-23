@@ -30,9 +30,9 @@ function printInitial (num) {
                     <option value="8 points">8 points</option>
                     <option value="Other...">Other...</option>
                 </select>
-                <input placeholder="Driver name" type="text" id="driverName-${num}.1" size="14">
+                <input placeholder="Driver name" type="text" id="driverName-${num}.1" size="17">
                 <button id="inc${num}AddDriver" class="driversBtn incButtons">+</button>
-                <input placeholder="Describe penalty" type="text" id="otherDeets-${num}.1" class="otherDeets" size="18" style="display:none">
+                <input placeholder="Describe penalty" type="text" id="otherDeets-${num}.1" class="otherDeets" size="19" style="display:none">
             </div>
             <div id="inc${num}driver2" class="incDriverRows" style="display: none">
                 <label for="penalty-${num}.2">Penalty:</label>
@@ -48,9 +48,9 @@ function printInitial (num) {
                     <option value="8 points">8 points</option>
                     <option value="Other...">Other...</option>
                 </select>
-                <input placeholder="Driver 2 name" type="text" id="driverName-${num}.2" size="14">
+                <input placeholder="Driver 2 name" type="text" id="driverName-${num}.2" size="17">
                 <button id="inc${num}RemoveDriver2" class="driversBtn incButtons">-</button>
-                <input placeholder="Describe penalty" type="text" id="otherDeets-${num}.2" class="otherDeets" size="18" style="display:none">
+                <input placeholder="Describe penalty" type="text" id="otherDeets-${num}.2" class="otherDeets" size="19" style="display:none">
             </div>
             <textarea placeholder="Reasoning" id="reason-${num}" class="reasoning" spellcheck="true" rows="5" cols="54"></textarea>  
         </div>`;
@@ -197,15 +197,23 @@ document.querySelector("#addIncident").addEventListener('click', () => {
 
 document.querySelector("#removeIncident").addEventListener('click', () => {
 //Remove incident button functionality
+    if (collapseStates[`inc${incsVisibleNum}CollapseState`]) {
+        collapseStates[`inc${incsVisibleNum}CollapseState`] = false;
+        document.getElementById(`inc${incsVisibleNum}CollapseBtn`).classList.toggle("collapsed")
+    }
     let container = document.getElementById("incidentContainer");
     let child = document.getElementById(`incident${incsVisibleNum}Group`)
     container.removeChild(child)
-    // document.querySelector(`#incident${incsVisibleNum}Group`).style.display = "none";
     incsVisibleNum--;
     if (incsVisibleNum < 2) {
         document.querySelector("#removeIncident").style.display = "none";
         document.getElementById('collapseAll').style.display = "none";
         document.getElementById('inc1CollapseBtn').style.display = "none"
+        document.getElementById("inc1AfterCheckbox").style.display = "block";
+        if (collapseStates[`inc1CollapseState`]) {
+            collapseStates[`inc1CollapseState`] = false;
+            document.getElementById(`inc1CollapseBtn`).classList.toggle("collapsed")
+        }
     }
     outputArray.pop();
 });

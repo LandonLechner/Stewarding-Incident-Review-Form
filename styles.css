@@ -22,7 +22,7 @@ body {
     /*background-image: url(https://images.pexels.com/photos/5904051/pexels-photo-5904051.jpeg?auto=compress&cs=tinysrgb&w=600);*/
     background-size: cover;
     height: 800px;
-    max-height: 75vh;
+    height: 75vh;
     background-position: top 77% right 0;
     background-repeat: no-repeat;
     max-width: 1200px;
@@ -76,11 +76,11 @@ h3 {
 }
 
 input {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 select {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .incidentTitle {
@@ -112,14 +112,11 @@ select {
     display: flex;
     justify-content: flex-start;
     gap: 5px;
+    margin-top: 3px;
 }
 
 .collapsed {
     transform: rotate(90deg);
-}
-
-.otherDeets {
-    justify-self: flex-end;
 }
 
 .reasoning {
@@ -173,6 +170,7 @@ textarea {
     border: 2px solid #07A3C8;
     background-color: white;
     height: 28px;
+    font-size: 0.9rem;
 }
 
 .incButtons:active {
@@ -196,13 +194,14 @@ textarea {
     position: absolute;
     padding: 0 10px;
     height: 26px;
-    margin-top: 14px;
+    margin: 14px 0 0 6px;
 }
 
 .driversBtn {
     padding: 0;
     width: 36px;
-    height: 26px;
+    height: 24px;
+    font-size: 1rem;
 }
 
 #footer{
