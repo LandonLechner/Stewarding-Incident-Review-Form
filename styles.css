@@ -42,7 +42,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
     margin: 20px 10px 0;
 }
 
@@ -196,6 +196,10 @@ textarea {
     width: 36px;
     height: 24px;
     font-size: 1rem;
+}
+
+.otherDeets {
+    margin-left: 62px;
 }
 
 #footer{
