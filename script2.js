@@ -14,7 +14,7 @@ function printInitial (num) {
         
         newIncDiv.innerHTML =
         `<h3 class="incidentTitle">Incident ${num}</h3>
-        <button id="inc${num}CollapseBtn"class="incCollapseBtnAll"><img src="https://img.icons8.com/?size=15&id=39942&format=png&color=000000"></button>
+        <button id="inc${num}CollapseBtn"class="incCollapseBtnAll"><img src="./right-arrow.png" style="height:15px; width:15px; transform:rotate(90deg)"></button>
         <div id="inc${num}AfterCheckbox">
             <div id="inc${num}driver1" class="incDriverRows">
                 <label for="penalty-${num}.1">Penalty:</label>
@@ -178,16 +178,20 @@ function driverNameVisibility (num) {
     const dropdown2 = document.getElementById(`penalty-${num}.2`);   
     dropdown1.addEventListener('input', () => {
         if (["NFA", "Racing incident", "Involved"].includes(dropdown1.value)) {
-            document.getElementById(`driverName-${num}.1`).style.display = "none"
+            document.getElementById(`driverName-${num}.1`).style.opacity = "0"
+            document.getElementById(`driverName-${num}.1`).setAttribute("tabindex", "-1")
         } else {
-            document.getElementById(`driverName-${num}.1`).style.display = "inline-block"
+            document.getElementById(`driverName-${num}.1`).style.opacity = "1"
+            document.getElementById(`driverName-${num}.1`).setAttribute("tabindex", "0");
         }
     })
     dropdown2.addEventListener('input', () => {
         if (["NFA", "Racing incident", "Involved"].includes(dropdown2.value)) {
-            document.getElementById(`driverName-${num}.2`).style.display = "none"
+            document.getElementById(`driverName-${num}.2`).style.opacity = "0"
+            document.getElementById(`driverName-${num}.2`).setAttribute("tabindex", "-1")
         } else {
-            document.getElementById(`driverName-${num}.2`).style.display = "inline-block"
+            document.getElementById(`driverName-${num}.2`).style.opacity = "1"
+            document.getElementById(`driverName-${num}.2`).setAttribute("tabindex", "0");
         }
     })
 }
