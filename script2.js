@@ -128,8 +128,8 @@ function updateTextarea (incsVisibleNum) {
 
         let titleText = `${i > 1 ? "\r\n\r\n" : ""}**Inc ${i}) -`;
         let noDrivers = ` ${p1Final}**`;
-        let singleDriver = ` ${d1} ${p1Final}**`
-        let bothDrivers = ` ${d1} ${p1Final}, ${d2} ${p2Final}**`
+        let singleDriver = ` ${p1Final} ${d1}**`
+        let bothDrivers = ` ${p1Final} ${d1}, ${p2Final} ${d2}**`
         let reasonText = ` ${reason}`
         switch (document.getElementById("format").value) {
             case "format1":
@@ -137,19 +137,26 @@ function updateTextarea (incsVisibleNum) {
             case "format2":
                 titleText = `${i > 1 ? "\r\n\r\n" : ""}INC${i} -`
                 noDrivers = ` ${p1Final}`
-                singleDriver = ` ${d1} ${p1Final}`
-                bothDrivers = ` ${d1} ${p1Final}, ${d2} ${p2Final}`
+                singleDriver = ` ${p1Final} ${d1}`
+                bothDrivers = ` ${p1Final} ${d1}, ${p2Final} ${d2}`
                 reasonText = ` - ${reason}`
                 break;
             case "format3":
                 titleText = `${i > 1 ? "\r\n" : ""}Inc ${i} -`
                 noDrivers = ` ${p1Final}`
-                singleDriver = ` ${d1} ${p1Final}`
-                bothDrivers = ` ${d1} ${p1Final}, ${d2} ${p2Final}`
+                singleDriver = ` ${p1Final} ${d1} `
+                bothDrivers = ` ${p1Final} ${d1}, ${p2Final} ${d2}`
                 reasonText = ` - ${reason}`
                 break;
             case "format4":
                 titleText = `${i > 1 ? "\r\n" : ""}**Inc ${i} -`
+                break;
+            case "format5":
+                titleText = `${i > 1 ? "\r\n\r\n" : ""}**INC${i}** -`
+                noDrivers = ` *${p1Final}*`
+                singleDriver = ` *${p1Final} - ${d1}*`
+                bothDrivers = ` *${p1Final} - ${d1}, ${p2Final} - ${d2}*`
+                reasonText = ` - ${reason}`
         }
 
         if (["NFA", "Racing incident", "Involved"].includes(p1Final)) {
