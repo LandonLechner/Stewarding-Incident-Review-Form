@@ -84,10 +84,11 @@ select {
 
 .incDriverRows {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 4px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .incCollapseBtnAll {
@@ -195,13 +196,20 @@ textarea {
 
 .driversBtn {
     padding: 0;
+    position: absolute;
+    right: 2px;
     width: 36px;
     height: 24px;
     font-size: 1rem;
 }
 
+.driver-name {
+    width: 164px;
+}
+
 .otherDeets {
     margin-left: 62px;
+    width: 343px;
 }
 
 #footer{

@@ -1,5 +1,3 @@
-//save stuff with browser?
-
 let incsVisibleNum = 1;
 
 function printInitial (num) {
@@ -30,9 +28,9 @@ function printInitial (num) {
                     <option value="Involved">Involved</option>
                     <option value="Other...">Other...</option>
                 </select>
-                <input placeholder="Driver name" type="text" id="driverName-${num}.1" size="17">
+                <input placeholder="Driver name" type="text" id="driverName-${num}.1" class="driver-name">
                 <button id="inc${num}AddDriver" class="driversBtn incButtons">+</button>
-                <input placeholder="Describe penalty" type="text" id="otherDeets-${num}.1" class="otherDeets" size="32" style="display:none">
+                <input placeholder="Describe penalty" type="text" id="otherDeets-${num}.1" class="otherDeets" style="display:none">
             </div>
             <div id="inc${num}driver2" class="incDriverRows" style="display: none">
                 <label for="penalty-${num}.2">Penalty:</label>
@@ -48,9 +46,9 @@ function printInitial (num) {
                     <option value="Involved">Involved</option>
                     <option value="Other...">Other...</option>
                 </select>
-                <input placeholder="Driver 2 name" type="text" id="driverName-${num}.2" size="17">
+                <input placeholder="Driver 2 name" type="text" id="driverName-${num}.2" class="driver-name">
                 <button id="inc${num}RemoveDriver2" class="driversBtn incButtons">-</button>
-                <input placeholder="Describe penalty" type="text" id="otherDeets-${num}.2" class="otherDeets" size="32" style="display:none">
+                <input placeholder="Describe penalty" type="text" id="otherDeets-${num}.2" class="otherDeets" style="display:none">
             </div>
             <textarea placeholder="Reasoning" id="reason-${num}" class="reasoning" spellcheck="true" rows="5" cols="54"></textarea>  
         </div>`;
