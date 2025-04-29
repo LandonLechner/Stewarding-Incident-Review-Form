@@ -56,7 +56,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: clamp(350px, 415px, 100%);
+    min-width: 350px;
 }
 
 #incidentContainer {
@@ -129,7 +129,7 @@ textarea {
 
 #output {
     font-size: 0.9rem;
-    width: 98%;
+    width: min(100%, 415px);
 }
 
 .bottomButtons {
@@ -208,7 +208,7 @@ textarea {
 }
 
 #format {
-    width: clamp(350px, 415px, 100%);
+    width: min(100%, 415px);
 }
 
 .otherDeets {
