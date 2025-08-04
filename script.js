@@ -25,6 +25,7 @@ function printInitial (num) {
                     <option value="Racing incident">Racing incident</option>
                     <option value="NFA">NFA</option>
                     <option value="Warning">Warning</option>
+                    <option value="Drive-through">Drive-through</option>
                     <option value="Involved">Involved</option>
                     <option value="Other...">Other...</option>
                 </select>
@@ -43,6 +44,7 @@ function printInitial (num) {
                     <option value="Racing incident">Racing incident</option>
                     <option value="NFA">NFA</option>
                     <option value="Warning">Warning</option>
+                    <option value="Drive-through">Drive-through</option>
                     <option value="Involved">Involved</option>
                     <option value="Other...">Other...</option>
                 </select>
